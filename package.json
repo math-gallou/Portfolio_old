@@ -5,6 +5,7 @@
   "dependencies": {
     "popmotion": "^8.5.5",
     "react": "^16.7.0",
+    "react-bootstrap": "^0.32.4",
     "react-dom": "^16.7.0",
     "react-pose": "^4.0.4",
     "react-reveal": "^1.2.2",

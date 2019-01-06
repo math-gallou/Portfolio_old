@@ -1,5 +1,49 @@
 .accueil{
-    width : 100vw;
     height: 100vh;
-    background-color: #61dafb;
+    background-color: #d0a98f;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.title{
+    margin: 5em;
+    font-size: xx-large;
+    color: #4d243d;
+}
+
+.boutonSuite{
+    cursor:pointer;
+    border:none;
+    width:11em;
+    height:11em;
+    border-radius: 10em;
+    background-color: blanchedalmond;
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.imgBouton{
+    width: 10em;
+    height: 10em;
+}
+
+.boutonSuite .tooltiptext {
+    visibility: hidden;
+    width: 5em;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: .3em;
+    padding: .5em;
+    opacity: .85;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.boutonSuite:hover .tooltiptext {
+    visibility: visible;
 }

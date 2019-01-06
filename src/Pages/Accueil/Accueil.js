@@ -1,6 +1,7 @@
 import posed from "react-pose";
 import './style.css';
 import React from 'react';
+import forward from './../../img/forward-purple.png';
 
 const Box = posed.div({
     show: {
@@ -14,11 +15,11 @@ const Box = posed.div({
             width:{ ease: 'linear',
                     duration:500 }
         },
-        applyAtStart: { display: "block",
+        applyAtStart: { display: "flex",
                         position:'static'},
     },
     hidden: {
-        delay : 400,
+        delay : 100,
         width:'0vw',
         x:'-200vw',
         applyAtStart:{ position:'absolute' },
@@ -36,16 +37,20 @@ const Box = posed.div({
 
 function Accueil(props){
     const parent = props.object;
+
     return (
         <Box className="accueil" pose={parent.state.isVisible ? 'show' : 'hidden'}>
-            <h1>
-                Bonjour, je m'appelle Mathilde Gallou
-            </h1>
-            <h2>
-                Bienvenue sur mon portfolio.
-            </h2>
-            <button onClick={parent.handleClick} pose={parent.state.isVisible ? 'show' : 'hidden'}>
-                Continuer
+            <div className="title">
+                <h1>
+                    Bonjour, je m'appelle Mathilde Gallou
+                </h1>
+                <h2>
+                    Bienvenue sur mon portfolio !
+                </h2>
+            </div>
+            <button className="boutonSuite" onClick={parent.handleClick}>
+                <img alt="bouton" src={forward} className="imgBouton"/>
+                <span className="tooltiptext">Continuez pour en savoir plus !</span>
             </button>
         </Box>
     );
