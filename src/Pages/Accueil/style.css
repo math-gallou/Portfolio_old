@@ -1,15 +1,27 @@
 .accueil{
     height: 100vh;
     background-color: #d0a98f;
+    background-image: url("../../img/computer4.jpg");
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .5;
 }
 
 .title{
     margin: 5em;
     font-size: xx-large;
-    color: #4d243d;
+    /*background-color: rgba(23,22,20, .5);*/
+    border-radius : .5em;
+    padding: .5em;
+}
+
+h1, h2{
+    opacity: 1!important;
+    color:#4d243d;
 }
 
 .boutonSuite{
