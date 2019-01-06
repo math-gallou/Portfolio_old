@@ -24,6 +24,14 @@
     border-bottom: 1px dotted black;
 }
 
+.boutonSuite:focus{
+    outline:0 !important;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+}
+
 .imgBouton{
     width: 10em;
     height: 10em;
