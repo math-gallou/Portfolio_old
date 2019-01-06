@@ -1,0 +1,10 @@
+.mainright{
+    display: flex;
+    flex-direction: column;
+}
+
+#centerapp{
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+}

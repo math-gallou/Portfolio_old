@@ -3,8 +3,7 @@
     flex-direction: row;
 }
 
-.nav{
-    width:100vw;
-    height:100vh;
-    background-color: antiquewhite;
+#restapp{
+    display: flex;
+    flex-direction: column;
 }
