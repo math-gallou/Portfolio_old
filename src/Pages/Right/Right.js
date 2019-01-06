@@ -43,12 +43,12 @@ function BoxRight(props){
 
     return (
         <Box className="mainright" pose={!parent.state.isVisible ? 'show' : 'hidden'}>
-            <BoxHeader/>
+            <BoxNav object={parent}/>
             <div id="centerapp">
-                <BoxNav object={parent}/>
+                <BoxHeader/>
                 <BoxContent/>
+                <BoxFooter/>
             </div>
-            <BoxFooter/>
         </Box>);
 }
 
