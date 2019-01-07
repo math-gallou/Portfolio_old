@@ -17,13 +17,13 @@ class BoxNav extends React.Component{
     openTab(e) {
         const truc = e.target.dataset.key;
         // Declare all variables
-        var i, tablinks;
+        var i, tabcontent, tablinks;
 
         // Get all elements with class="tabcontent" and hide them
-        // tabcontent = document.getElementsByClassName("tabcontent");
-        // for (i = 0; i < tabcontent.length; i++) {
-        //     tabcontent[i].style.display = "none";
-        // }
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
 
         // Get all elements with class="tablinks" and remove the class "active"
         tablinks = document.getElementsByClassName("tablinks");
@@ -32,7 +32,7 @@ class BoxNav extends React.Component{
         }
 
         // Show the current tab, and add an "active" class to the link that opened the tab
-        // document.getElementById(name).style.display = "block";
+        document.getElementById(truc).style.display = "flex";
         if (truc !== "accueil")
             document.getElementById("id"+truc).parentNode.className += " active";
     }
