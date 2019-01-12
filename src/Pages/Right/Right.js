@@ -9,31 +9,23 @@ import BoxNav from "../Nav/Nav";
 const Box = posed.div({
     show: {
         x:'0vw',
-        width:'100vw',
         applyAtStart: { display: "flex",
             position:'static'},
         transition: {
             x: { type: 'spring',
-                stiffness: 50,
-                damping: 30,
-                duration : 1500 },
-            width:{ ease: 'linear',
-                duration:500 }
+                stiffness: 15,
+                damping: 45,
+                duration : 500 },
         }
     },
     hidden: {
         delay:400,
-        width:'0vw',
         x:'200vw',
         applyAtStart:{ position:'absolute' },
         applyAtEnd: { display: "none" },
         transition: {
-            x: { type: 'spring',
-                stiffness: 50,
-                damping: 30,
-                duration : 1500 },
-            width:{ ease: 'linear',
-                duration:500 }
+            x: { ease: 'linear',
+                 duration : 1500 },
         }
     }
 });

@@ -1,5 +1,6 @@
 .accueil{
     height: 100vh;
+    width: 100vw;
     background-color: #d0a98f;
     background-image: url("../../img/computer4.jpg");
     align-items: center;

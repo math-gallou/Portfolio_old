@@ -6,11 +6,10 @@ import forward from './../../img/forward-purple.png';
 const Box = posed.div({
     show: {
         x:'0vw',
-        width:'100vw',
         transition: {
             x: { type: 'spring',
-                 stiffness: 50,
-                 damping: 30,
+                 stiffness: 10,
+                 damping: 40,
                  duration : 1500 },
             width:{ ease: 'linear',
                     duration:500 }
@@ -19,18 +18,13 @@ const Box = posed.div({
                         position:'static'},
     },
     hidden: {
-        delay : 100,
-        width:'0vw',
         x:'-200vw',
         applyAtStart:{ position:'absolute' },
         applyAtEnd: { display: "none" },
         transition: {
-            x: { type: 'spring',
-                 stiffness: 50,
-                 damping: 30,
+            x: { ease: 'linear',
+                 delay : 300,
                  duration : 1500 },
-            width:{ ease: 'linear',
-                    duration:500 }
         },
     }
 });
@@ -57,7 +51,7 @@ function Accueil(props){
         <Box className="accueil" pose={parent.state.isVisible ? 'show' : 'hidden'}>
             <div className="title">
                 <h1>
-                    Bonjour, je m'appelle Mathilde Gallou
+                    Bonjour, je m'appelle Mathilde Gallou.
                 </h1>
                 <h2>
                     Bienvenue sur mon portfolio !
