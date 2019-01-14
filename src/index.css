@@ -4,9 +4,15 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
+  height : 100%;
 }
 
 html{
   background-color: antiquewhite;
   overflow : hidden;
+  height : 100%;
+}
+
+#root, #app{
+  height:100%;
 }

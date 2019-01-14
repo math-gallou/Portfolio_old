@@ -1,5 +1,13 @@
 .tabcontent{
-    height: 80vh;
-    width: 80vw;
+    width: 100%;
     background-color: darkgray;
+    overflow : auto;
+}
+
+#boxcontent{
+    width:70%;
+    overflow : auto;
+    max-height: 100%;
+    margin-bottom: 3em;
+    margin-top: 5em;
 }

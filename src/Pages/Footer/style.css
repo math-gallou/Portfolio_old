@@ -1,4 +1,13 @@
-.footer{
-    height: 10vh;
-    width: 80vw;
+footer{
+    /*background-color: #f1f1f1;*/
+    width: 100%;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    height:3em;
+    background-color: blueviolet;
+}
+
+footer div{
+    width : 70%;
 }
