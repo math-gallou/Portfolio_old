@@ -4,7 +4,6 @@ import './style.css';
 import BoxHeader from "../Header/Header";
 import BoxContent from "../Content/Content";
 import BoxFooter from "../Footer/Footer";
-import BoxNav from "../Nav/Nav";
 
 const Box = posed.div({
     show: {

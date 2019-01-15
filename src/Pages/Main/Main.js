@@ -13,6 +13,10 @@ class Main extends React.Component {
     handleClick(){
         this.setState({ isVisible: !this.state.isVisible } );
     }
+    
+    componentDidMount() {
+        document.title = "Mathilde Gallou";
+    }
 
     render() {
         return (
