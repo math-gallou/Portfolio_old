@@ -4,7 +4,9 @@ import './style.css';
 function BoxCompetences(props){
     return (
         <div id="competences" className="tabcontent">
-            Compétences
+            <div id="idcontentcompetences">
+                Prochainement.
+            </div>
         </div>);
 }
 

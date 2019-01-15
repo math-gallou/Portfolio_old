@@ -1,4 +1,9 @@
 #parcours{
     display: none;
     max-height: 100%;
+    justify-content: center;
+}
+
+#idcontentparcours{
+    font-size: xx-large;
 }

@@ -1,7 +1,6 @@
 .nav{
     width:70%;
     border: none;
-    background-color: #f1f1f1;
     display: flex;
     flex-direction: row;
     padding-top : 1em;
@@ -30,8 +29,12 @@ a {
     transition: color 0.1s, background-color 0.1s;
 }
 
-a:hover {
+a:hover{
     color: #cac2b5;
+}
+
+.active{
+    color: #A19B90;
 }
 
 a::before {
@@ -51,13 +54,9 @@ a::before {
     transition: color 0.1s, transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
 }
 
-a:hover::before {
+a:hover::before, .active::before {
     -webkit-transform-origin: center top;
     transform-origin: center top;
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
-}
-
-.active{
-    background-color: #d0a98f !important;
 }

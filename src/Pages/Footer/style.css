@@ -5,9 +5,9 @@ footer{
     justify-content: center;
     align-items: center;
     height:3em;
-    background-color: blueviolet;
 }
 
 footer div{
     width : 70%;
+    text-align: center;
 }

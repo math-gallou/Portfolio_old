@@ -4,7 +4,9 @@ import './style.css';
 function BoxContact(props){
     return (
         <div id="contact" className="tabcontent">
-            Contact
+            <div id="idcontentcontact">
+                Prochainement.
+            </div>
         </div>);
 }
 

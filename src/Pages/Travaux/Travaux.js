@@ -4,7 +4,9 @@ import './style.css';
 function BoxTravaux(props){
     return (
         <div id="travaux" className="tabcontent">
-            Travaux
+            <div id="idcontenttravaux">
+                Prochainement.
+            </div>
         </div>);
 }
 

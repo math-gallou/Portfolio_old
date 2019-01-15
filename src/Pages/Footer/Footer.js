@@ -5,7 +5,7 @@ function BoxFooter(props){
     return (
         <footer>
             <div>
-                Copyright © 2019 Mathilde Gallou - Dernière mise à jour : 12 Janvier 2019 - Pour me contacter : math.gallou@gmail.com
+                Copyright © 2019 Mathilde Gallou - Dernière mise à jour : 15 Janvier 2019 - Pour me contacter : math.gallou@gmail.com
             </div>
         </footer>);
 }

@@ -1,3 +1,9 @@
 #accueil{
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#accueil > div{
+    font-size: x-large;
 }
