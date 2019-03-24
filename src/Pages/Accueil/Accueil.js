@@ -1,7 +1,7 @@
 import posed from "react-pose";
 import './style.css';
 import React from 'react';
-import forward from './../../img/forward-purple.png';
+import forward from '../../img/forward-purple.png';
 
 const Box = posed.div({
     show: {

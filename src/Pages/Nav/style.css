@@ -19,7 +19,7 @@
     align-items: center;
 }
 
-a {
+.tablinks {
     color : #4d243d;
     cursor: pointer;
     text-decoration: none;
@@ -29,7 +29,7 @@ a {
     transition: color 0.1s, background-color 0.1s;
 }
 
-a:hover{
+.tablinks:hover{
     color: #cac2b5;
 }
 
@@ -37,7 +37,7 @@ a:hover{
     color: #A19B90;
 }
 
-a::before {
+.tablinks::before {
     content: '';
     display: block;
     position: absolute;
@@ -54,7 +54,7 @@ a::before {
     transition: color 0.1s, transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
 }
 
-a:hover::before, .active::before {
+.tablinks:hover::before, .active::before {
     -webkit-transform-origin: center top;
     transform-origin: center top;
     -webkit-transform: scale(1, 1);
