@@ -18,8 +18,7 @@ function BoxContact(props){
                 <h3>Vous pouvez me retrouver sur : </h3>
                 <br/> LinkedIn <a href="https://www.linkedin.com/in/mathilde-gallou-a28968158/" target="_blank"><Image alt="logo linekdin" src="logos/linkedin.png" /></a>
                 <br/> Github <a href="https://github.com/math-gallou" target="_blank"><Image alt="logo github" src="logos/github.png" /></a>
-
-                <br/> et me contacter par mail à l'adresse <mail><a href="mailto:math.gallou@gmail.com?Subject=Demande%20de%20contact" target="_top">math.gallou@gmail.com</a></mail> <Image alt="logo gmail" src="logos/gmail.png" />
+                <br/> et me contacter par mail à l'adresse <a href="mailto:math.gallou@gmail.com?Subject=Demande%20de%20contact" target="_top">math.gallou@gmail.com</a> <Image alt="logo gmail" src="logos/gmail.png" />
             </div>
         </div>);
 }

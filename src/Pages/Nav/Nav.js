@@ -34,10 +34,10 @@ class BoxNav extends React.Component{
 
         // Show the current tab, and add an "active" class to the link that opened the tab
         document.getElementById(truc).style.display = "flex";
-        if (truc !== "accueil")
+        if (truc !== "accueil"){
             document.getElementById("idtab"+truc).className += " active";
-
-        this.showContent(truc);
+            this.showContent(truc);
+        }
     }
 
     showContent(truc) {
