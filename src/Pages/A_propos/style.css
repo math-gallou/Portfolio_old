@@ -4,6 +4,32 @@
     justify-content: center;
 }
 
-#idcontentapropos{
+#contenu_apropos{
+    font-size: large;
+}
+
+.contenu_apropos_p{
+    text-indent: 3em;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.6em;
+}
+
+.a_propos_link{
+    color: #e68a00;
+    text-decoration: none;
+}
+
+.a_propos_link:hover{
+    color: #ff9980;
+}
+
+#fin_apropos{
+    text-align: center;
     font-size: xx-large;
+}
+
+.keywords{
+    font-style: italic;
+    color: #cc0000;
 }

@@ -16,3 +16,8 @@ html{
 #root, #app{
   height:100%;
 }
+
+.enattendant{
+  font-size : xx-large;
+  margin: 2em;
+}
