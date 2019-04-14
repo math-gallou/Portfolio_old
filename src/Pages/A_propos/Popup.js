@@ -1,6 +1,7 @@
 import React from 'react';
 import Popup from 'reactjs-popup';
 import posed from "react-pose";
+import './style.css';
 
 const Bouton = posed.button({
     hoverable: true,
@@ -8,7 +9,7 @@ const Bouton = posed.button({
     init: { scale: 1,
         boxShadow: '0px 0px 0px rgba(0,0,0,0)'
     },
-    hover: {scale: 1.2,
+    hover: {scale: 1.1,
         boxShadow: '0px 5px 10px rgba(0,0,0,0.2)'
     },
     press: {scale: 1.1,
@@ -38,19 +39,14 @@ class ControlledPopup extends React.Component {
         return (
             <div>
                 <Bouton onClick={this.openModal}>
-                    <img alt={this.image} src={this.image}/>
+                    <img alt={this.image} src={this.image} className="image_cliquable"/>
                 </Bouton>
                 <Popup
                     open={this.state.open}
                     closeOnDocumentClick
                     onClose={this.closeModal}
                 >
-                    <div className="modal">
-                        <a className="close" onClick={this.closeModal}>
-                            &times;
-                        </a>
-                        {this.texte}
-                    </div>
+                    <div dangerouslySetInnerHTML={{__html: this.texte}}></div>
                 </Popup>
             </div>
         );

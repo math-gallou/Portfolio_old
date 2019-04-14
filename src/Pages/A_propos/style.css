@@ -33,3 +33,9 @@
     font-style: italic;
     color: #cc0000;
 }
+
+.image_cliquable{
+    max-width: 25em;
+    max-height: 25em;
+    margin: 1em;
+}
