@@ -1,5 +1,20 @@
 import React from 'react';
 import Popup from 'reactjs-popup';
+import posed from "react-pose";
+
+const Bouton = posed.button({
+    hoverable: true,
+    pressable: true,
+    init: { scale: 1,
+        boxShadow: '0px 0px 0px rgba(0,0,0,0)'
+    },
+    hover: {scale: 1.2,
+        boxShadow: '0px 5px 10px rgba(0,0,0,0.2)'
+    },
+    press: {scale: 1.1,
+        boxShadow: '0px 2px 5px rgba(0,0,0,0.1)'
+    }
+});
 
 class ControlledPopup extends React.Component {
     constructor(props) {
@@ -22,7 +37,9 @@ class ControlledPopup extends React.Component {
     render() {
         return (
             <div>
-                <img alt={this.image} src={this.image} onClick={this.openModal}/>
+                <Bouton onClick={this.openModal}>
+                    <img alt={this.image} src={this.image}/>
+                </Bouton>
                 <Popup
                     open={this.state.open}
                     closeOnDocumentClick
