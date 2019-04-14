@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css';
 import ControlledPopup from './Popup.js';
+import marvel from '../../img/logos/marvel.png';
 
 class BoxApropos extends React.Component{
     constructor(props){
@@ -48,7 +49,9 @@ class BoxApropos extends React.Component{
                             C'est à travers les films d'Iron Man ou d'Avengers que j'ai vraiment pris <span className="keywords">goût à la technologie et au bricolage</span> :
                             même si tout ce qu'on peut voir dans ces films n'est aujourd'hui pas réalisable, j'aspire à pouvoir un jour rendre ces technologies <span className="keywords">réalité</span>.
                         </p>
-                        <ControlledPopup/>
+                        <ControlledPopup image={marvel} texte="Enfin, je me passionne pour <span className='keywords'>l'univers Marvel</span>.
+                            C'est à travers les films d'Iron Man ou d'Avengers que j'ai vraiment pris <span className='keywords'>goût à la technologie et au bricolage</span> :
+                            même si tout ce qu'on peut voir dans ces films n'est aujourd'hui pas réalisable, j'aspire à pouvoir un jour rendre ces technologies <span className='keywords'>réalité</span>."/>
                     </div>
                 </div>
             </div>);

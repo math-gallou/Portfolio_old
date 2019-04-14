@@ -5,13 +5,16 @@ class ControlledPopup extends React.Component {
     constructor(props) {
         super(props);
         this.state = { open: false };
+        this.image = props.image;
+        this.texte = props.texte;
         this.openModal = this.openModal.bind(this);
         this.closeModal = this.closeModal.bind(this);
-
     };
+
     openModal (){
         this.setState({ open: true });
     };
+
     closeModal () {
         this.setState({ open: false });
     };
@@ -19,9 +22,7 @@ class ControlledPopup extends React.Component {
     render() {
         return (
             <div>
-                <button className="button" onClick={this.openModal}>
-                    Controlled Popup
-                </button>
+                <img alt={this.image} src={this.image} onClick={this.openModal}/>
                 <Popup
                     open={this.state.open}
                     closeOnDocumentClick
@@ -31,10 +32,7 @@ class ControlledPopup extends React.Component {
                         <a className="close" onClick={this.closeModal}>
                             &times;
                         </a>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae magni
-                        omnis delectus nemo, maxime molestiae dolorem numquam mollitia, voluptate
-                        ea, accusamus excepturi deleniti ratione sapiente! Laudantium, aperiam
-                        doloribus. Odit, aut.
+                        {this.texte}
                     </div>
                 </Popup>
             </div>
