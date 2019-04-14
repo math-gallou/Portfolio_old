@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.css';
+import ControlledPopup from './Popup.js';
 
 class BoxApropos extends React.Component{
     constructor(props){
@@ -47,6 +48,7 @@ class BoxApropos extends React.Component{
                             C'est à travers les films d'Iron Man ou d'Avengers que j'ai vraiment pris <span className="keywords">goût à la technologie et au bricolage</span> :
                             même si tout ce qu'on peut voir dans ces films n'est aujourd'hui pas réalisable, j'aspire à pouvoir un jour rendre ces technologies <span className="keywords">réalité</span>.
                         </p>
+                        <ControlledPopup/>
                     </div>
                 </div>
             </div>);
