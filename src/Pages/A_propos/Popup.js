@@ -37,8 +37,8 @@ class ControlledPopup extends React.Component {
 
     render() {
         return (
-            <div>
-                <Bouton onClick={this.openModal}>
+            <div className="div_bouton_popup">
+                <Bouton onClick={this.openModal} className="bouton_popup">
                     <img alt={this.image} src={this.image} className="image_cliquable"/>
                 </Bouton>
                 <Popup
@@ -46,7 +46,7 @@ class ControlledPopup extends React.Component {
                     closeOnDocumentClick
                     onClose={this.closeModal}
                 >
-                    <div dangerouslySetInnerHTML={{__html: this.texte}}></div>
+                    <div dangerouslySetInnerHTML={{__html: this.texte}} className="div_popup"></div>
                 </Popup>
             </div>
         );

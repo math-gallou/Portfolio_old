@@ -37,5 +37,24 @@
 .image_cliquable{
     max-width: 25em;
     max-height: 25em;
+}
+
+.div_popup{
+    text-indent: 3em;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.6em;
+    padding: 3em 1em;
+}
+
+.bouton_popup{
+    background-color: transparent;
+    border: transparent;
+}
+
+.div_bouton_popup{
+    max-width: 25em;
+    max-height: 25em;
     margin: 1em;
+    background-color: transparent;
 }
