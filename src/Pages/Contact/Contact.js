@@ -1,6 +1,9 @@
 import React from 'react';
 import './style.css';
 import posed from "react-pose";
+import linkedin from '../../img/logos/linkedin.png';
+import gmail from '../../img/logos/gmail.png';
+import github from '../../img/logos/github.png';
 
 const Image = posed.img({
     hoverable: true,
@@ -16,9 +19,9 @@ function BoxContact(props){
         <div id="contact" className="tabcontent">
             <div id="idcontentcontact">
                 <h3>Vous pouvez me retrouver sur : </h3>
-                <br/> LinkedIn <a href="https://www.linkedin.com/in/mathilde-gallou-a28968158/" target="_blank"><Image alt="logo linekdin" src="logos/linkedin.png" /></a>
-                <br/> Github <a href="https://github.com/math-gallou" target="_blank"><Image alt="logo github" src="logos/github.png" /></a>
-                <br/> et me contacter par mail à l'adresse <a href="mailto:math.gallou@gmail.com?Subject=Demande%20de%20contact" target="_top">math.gallou@gmail.com</a> <Image alt="logo gmail" src="logos/gmail.png" />
+                <br/> LinkedIn <a href="https://www.linkedin.com/in/mathilde-gallou-a28968158/" target="_blank"><Image alt="logo linekdin" src={linkedin} /></a>
+                <br/> Github <a href="https://github.com/math-gallou" target="_blank"><Image alt="logo github" src={github} /></a>
+                <br/> et me contacter par mail à l'adresse <a href="mailto:math.gallou@gmail.com?Subject=Demande%20de%20contact" target="_top">math.gallou@gmail.com</a> <Image alt="logo gmail" src={gmail} />
             </div>
         </div>);
 }

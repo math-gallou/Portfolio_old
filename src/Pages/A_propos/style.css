@@ -6,13 +6,18 @@
 
 #contenu_apropos{
     font-size: large;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
 }
 
-.contenu_apropos_p{
+#contenu_apropos_p{
     text-indent: 3em;
     text-align: justify;
     text-justify: inter-word;
     line-height: 1.6em;
+    margin: 1em;
+    max-width: 70%;
 }
 
 .a_propos_link{
@@ -36,7 +41,7 @@
 
 .image_cliquable{
     max-width: 25em;
-    max-height: 25em;
+    max-height: 20em;
 }
 
 .div_popup{

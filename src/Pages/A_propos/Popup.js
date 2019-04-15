@@ -23,6 +23,7 @@ class ControlledPopup extends React.Component {
         this.state = { open: false };
         this.image = props.image;
         this.texte = props.texte;
+        this.titre = props.titre+"_popup";
         this.openModal = this.openModal.bind(this);
         this.closeModal = this.closeModal.bind(this);
     };
@@ -46,7 +47,7 @@ class ControlledPopup extends React.Component {
                     closeOnDocumentClick
                     onClose={this.closeModal}
                 >
-                    <div dangerouslySetInnerHTML={{__html: this.texte}} className="div_popup"></div>
+                    <div dangerouslySetInnerHTML={{__html: this.texte}} className="div_popup" id={this.titre.toString()}></div>
                 </Popup>
             </div>
         );
